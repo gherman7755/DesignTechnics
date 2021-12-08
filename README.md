@@ -18,6 +18,17 @@ In software engineering, the Structural Design Patterns are concerned with how c
 - Facade
 - Flyweight
 - Proxy
+
+## Theory for lab 3:
+In software engineering, behavioral design patterns have the purpose of identifying common communication patterns between different software entities. By doing so, these patterns increase flexibility in carrying out this communication. Some examples from this category of design patterns are :
+- Chain of Responsibility
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Observer
+- Strategy
+
 ## Implementation
 #### Lab 1
 There was taken as a domain restaurant. So the Menu of this restaurant was implemented with help of Abstract Factory, cause of a lot of type of dishes. I also connected some modules like _abc_. This module is python built-in module for abstract methods.
@@ -78,3 +89,6 @@ it calls method ```check_access```. This method checks if client has rights to e
 And there is ```client_access``` that requests information from ```DataBase```.
 Cause of Proxy we can now instead of giving ```DataBase```, we give client ```Check``` that checks if
 client has rights to access it.
+
+#### Lab 3
+In this laboratory work I implemented Observer. This is a behavioral pattern that allows objects to notify other objects about changes in their state. In my project Observer is `Subscirber`, those who subscribed for some notifications from my restaurant. Publisher is `RestaurantJournal` class that notify about some changes about restaurant, subcribes and unsubscribes people and change state of the all restaurant. `Subscriber` is an interface. Class `WantsToVisit` notify only those people who wants to know if restaurant is `Opened`, has `Free Food` or has `Event`. Class `Other` notify only those people who wants to know about closing and repairing restaurant.  
