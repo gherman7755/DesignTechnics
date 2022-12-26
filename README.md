@@ -1,7 +1,7 @@
-# DesignTechnics
+# Design Technics
 ## Author: Gherman Artiom
 The topic of this laboratory work was to implement project with use of design patterns for the chosen domain (in this case it is restaurant).
-## Theory for lab 1:
+## Beginner Theory:
 In software engineering, the creational design patterns are the general solutions that deal with object creation, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by optimizing, hiding or controlling the object creation.
 Some examples of this kind of design patterns are:
 - Singleton
@@ -9,7 +9,7 @@ Some examples of this kind of design patterns are:
 - Prototype
 - Factory Method
 - Abstract Factory
-## Theory for lab 2:
+## Intermediate Theory:
 In software engineering, the Structural Design Patterns are concerned with how classes and objects are composed to form larger structures. Structural class patterns use inheritance to create a hierarchy of classes/abstractions, but the structural object patterns use composition which is generally a more flexible alternative to inheritance.
 - Adapter
 - Bridge
@@ -19,7 +19,7 @@ In software engineering, the Structural Design Patterns are concerned with how c
 - Flyweight
 - Proxy
 
-## Theory for lab 3:
+## Advanced Theory:
 In software engineering, behavioral design patterns have the purpose of identifying common communication patterns between different software entities. By doing so, these patterns increase flexibility in carrying out this communication. Some examples from this category of design patterns are :
 - Chain of Responsibility
 - Command
@@ -30,12 +30,12 @@ In software engineering, behavioral design patterns have the purpose of identify
 - Strategy
 
 ## Implementation
-#### Lab 1
+#### Restaurant
 There was taken as a domain restaurant. So the Menu of this restaurant was implemented with help of Abstract Factory, cause of a lot of type of dishes. I also connected some modules like _abc_. This module is python built-in module for abstract methods.
 So Tables was implemented with help of Prototype Pattern, cause of tables are all the same.
 So Workers was implemented with help of Factory Method, because I have two classes like ordinary worker and chief of the restaurant. They both has their abstract methods.
-#### Lab 2
-In this laboratory work I used three Structural Design Patterns:
+#### Restaurant Features
+In this part of the project I used three Structural Design Patterns:
 - Adapter
 - Facade
 - Proxy
@@ -90,5 +90,5 @@ And there is ```client_access``` that requests information from ```DataBase```.
 Cause of Proxy we can now instead of giving ```DataBase```, we give client ```Check``` that checks if
 client has rights to access it.
 
-#### Lab 3
-In this laboratory work I implemented Observer. This is a behavioral pattern that allows objects to notify other objects about changes in their state. In my project Observer is `Subscirber`, those who subscribed for some notifications from my restaurant. Publisher is `RestaurantJournal` class that notify about some changes about restaurant, subcribes and unsubscribes people and change state of the all restaurant. `Subscriber` is an interface. Class `WantsToVisit` notify only those people who wants to know if restaurant is `Opened`, has `Free Food` or has `Event`. Class `Other` notify only those people who wants to know about closing and repairing restaurant.  
+#### Advanced Features
+In this part of the work I implemented Observer. This is a behavioral pattern that allows objects to notify other objects about changes in their state. In my project Observer is `Subscirber`, those who subscribed for some notifications from my restaurant. Publisher is `RestaurantJournal` class that notify about some changes about restaurant, subcribes and unsubscribes people and change state of the all restaurant. `Subscriber` is an interface. Class `WantsToVisit` notify only those people who wants to know if restaurant is `Opened`, has `Free Food` or has `Event`. Class `Other` notify only those people who wants to know about closing and repairing restaurant.  
